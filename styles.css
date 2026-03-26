@@ -255,7 +255,7 @@ nav ul li a:hover {
 
 .contact-info ul li i {
   font-size: 1.2em;
-  margi  n-right: 10px;
+  margin-right: 10px;
   color: #001F3F; /* Navy Blue */
 }
 
@@ -323,4 +323,80 @@ footer {
 footer p {
   margin: 0;
   font-size: 0.9em;
+}
+
+/* Navigation bar */
+
+.navbar {
+  background: #001F3F; /* Navy Blue */
+  color: #fff;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-top {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+  margin: 0;
+  padding: 8px 0;
+}
+
+.navbar-bottom a {
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 8px;
+}
+
+.navbar-bottom a i {
+  font-size: 1.1rem;
+}
+
+/* projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: #001F3F; /* navy blue */
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #D4AF37; /* goldish */
+}
+
+.project-card p {
+  color: #cacaca; /* cloudy white */
+  line-height: 1.6;
 }
