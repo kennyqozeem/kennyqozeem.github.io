@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Precious Andrew | Data Analysis Portfolio</title>
-      <!-- 👇 ADD THESE TWO LINES FOR YOUR FAVICON 👇 -->
+    <!-- 👇 ADD THESE TWO LINES FOR YOUR FAVICON 👇 -->
     <link rel="icon" type="image/png" href="/favicon-32x32.png">
     <link rel="apple-touch-icon" href="/favicon-32x32.png">
     <!-- 👆 END OF FAVICON LINES 👆 -->
@@ -18,16 +18,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     
     <!-- Your Stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- HEADER SECTION -->
-<header>
-    <div class="container">
-        <h1>Precious Andrew</h1>
-        <p>Data Analyst | Power BI Developer | Data Storyteller</p>
-        <div class="social-links">
+<!-- NAVIGATION -->
+<nav>
+    <div class="navbar">
+        <div class="navbar-top">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-bottom">
             <!-- CORRECTED LINKS -->
             <a href="https://www.linkedin.com/in/precious-isioma-andrew-b935a9137/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/IssyyA" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
@@ -35,19 +41,15 @@
             <a href="assets/Precious_Andrew_CV.pdf" download title="Download CV"><i class="fas fa-file-arrow-down"></i></a>
         </div>
     </div>
-</header>
-
-<!-- NAVIGATION -->
-<nav>
-    <div class="container">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
 </nav>
+
+<!-- HEADER SECTION -->
+<header>
+    <div class="container">
+        <h1>Precious Andrew</h1>
+        <p>Data Analyst | Power BI Developer | Data Storyteller</p>
+    </div>
+</header>
 
 <!-- ABOUT SECTION -->
 <section id="about" class="section">
@@ -70,7 +72,7 @@
         <div class="projects-grid">
 
             <!-- Project 1: Healthcare -->
-             <div class="project-card">
+            <div class="project-card">
                 <img src="assets/images/nhs.png" alt="NHS Healthcare Dashboard">
                 <div class="project-card-content">
                     <h3>NHS-Accidents-Emergency-Performance-Analysis</h3>
@@ -139,7 +141,7 @@
                 </div>
                 <ul class="skill-list">
                     <li>Power BI</li>
-                     <li>Looker Studio</li>
+                    <li>Looker Studio</li>
                     <li>Excel Dashboards</li>
                 </ul>
             </div>
@@ -168,7 +170,7 @@
                     <li>DAX</li>
                     <li>Star Schema Design</li>
                     <li>ETL Processes</li>
-              <!--      <li>Data Warehousing Concepts</li> -->
+                <!--      <li>Data Warehousing Concepts</li> -->
                 </ul>
             </div>
 
@@ -219,8 +221,6 @@
         <p>&copy; 2024 Precious Andrew. All rights reserved.</p>
     </div>
 </footer>
-
-<script src="assets/js/main.js"></script>
 
 </body>
 </html>
