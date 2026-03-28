@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-  background-color: #fff; /* White background */
+  background-color: #fff;
 }
 
 .container {
@@ -17,12 +17,13 @@ body {
 
 /* Navigation Bar */
 nav {
-  background: #001F3F; /* Navy Blue */
+  background: #001F3F;
   color: #fff;
-  padding: 10px 0;
+  padding: 10px 60px 10px 0;
   position: sticky;
   top: 0;
   z-index: 1000;
+  position: relative;
 }
 
 nav ul {
@@ -31,7 +32,6 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
- /* margin-right: 60px;  Adjust this value to prevent overlap with the image */
 }
 
 nav ul li {
@@ -45,33 +45,25 @@ nav ul li a {
   transition: color 0.3s ease;
 }
 
+nav ul li a:hover {
+  color: #D4AF37;
+}
 
 /* Profile Picture in Navigation */
 .profile-pic {
   position: absolute;
   top: 10px;
   right: 10px;
-  width: 70px; /* Adjust the size as needed */
-  height: 70px; /* Adjust the size as needed */
-  border-radius: 50%; /* Makes the image circular */
-  border: 2px solid #D4AF37; /* Optional: Adds a border */
-  object-fit: cover; /* Ensures the image fits well */
-}
-
-/* Ensure the navigation bar has enough padding to accommodate the image */
-nav {
-  padding: 10px 60px 10px 0; /* Adjust the right padding to fit the image */
-  position: relative; /* Needed for absolute positioning of the image */
-}
-
-
-nav ul li a:hover {
-  color: #D4AF37; /* Dark Gold hover */
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #D4AF37;
+  object-fit: cover;
 }
 
 /* Home Section */
 #home {
-  background: #001F3F; /* Navy Blue */
+  background: #001F3F;
   color: #fff;
   text-align: center;
   padding: 100px 0;
@@ -88,7 +80,7 @@ nav ul li a:hover {
 }
 
 #home .btn {
-  background: #D4AF37; /* Dark Gold */
+  background: #D4AF37;
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
@@ -98,27 +90,27 @@ nav ul li a:hover {
 }
 
 #home .btn:hover {
-  background: #fff; /* White hover */
-  color: #001F3F; /* Navy Blue */
+  background: #fff;
+  color: #001F3F;
 }
 
 /* About Section */
 #about {
-  background: #fff; /* White background */
+  background: #fff;
   padding: 40px 0;
 }
 
 #about h2 {
-  color: #001F3F; /* Navy Blue */
+  color: #001F3F;
 }
 
 #about p {
-  color: #666; /* Grey text */
+  color: #666;
 }
 
-/* skills Section */
+/* Skills Section */
 #skills {
-  background: #f9f9f9; /* Light grey background */
+  background: #f9f9f9;
   padding: 40px 0;
 }
 
@@ -129,7 +121,7 @@ nav ul li a:hover {
 }
 
 .skills {
-  background: #fff; /* White background */
+  background: #fff;
   padding: 20px;
   border: 1px solid #e0e0e0;
   border-radius: 5px;
@@ -145,17 +137,17 @@ nav ul li a:hover {
 .skills h3 {
   margin-top: 0;
   font-size: 1.5em;
-  color: #001F3F; /* Navy Blue */
+  color: #001F3F;
 }
 
 .skills p {
-  color: #666; /* Grey text */
+  color: #666;
   line-height: 1.6;
 }
 
 /* Portfolio Section */
 #portfolio {
-  background: #fff; /* White background */
+  background: #fff;
   padding: 40px 0;
 }
 
@@ -166,7 +158,7 @@ nav ul li a:hover {
 }
 
 .project {
-  background: #fff; /* White background */
+  background: #fff;
   padding: 20px;
   border: 1px solid #e0e0e0;
   border-radius: 5px;
@@ -181,11 +173,11 @@ nav ul li a:hover {
 .project h3 {
   margin-top: 0;
   font-size: 1.5em;
-  color: #001F3F; /* Navy Blue */
+  color: #001F3F;
 }
 
 .project p {
-  color: #666; /* Grey text */
+  color: #666;
   line-height: 1.6;
 }
 
@@ -196,50 +188,53 @@ nav ul li a:hover {
 }
 
 .project a {
-  color: #001F3F; /* Navy Blue */
+  color: #001F3F;
   text-decoration: none;
   font-weight: bold;
 }
 
 .project a:hover {
-  color: #D4AF37; /* Dark Gold hover */
+  color: #D4AF37;
 }
 
 /* Contact Section */
 #contact {
-  background: #f9f9f9; /* Light grey background */
+  background: #f9f9f9;
   padding: 40px 0;
 }
 
 #contact h2 {
-  color: #001F3F; /* Navy Blue */
+  color: #001F3F;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-#contact p {
-  color: #666; /* Grey text */
+#contact > .container > p {
+  color: #666;
   text-align: center;
   margin-bottom: 40px;
 }
 
+/* Contact Info + Form side by side */
 .contact-container {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 40px;
+  margin-bottom: 40px;
 }
 
-.contact-info, .contact-form {
-  background: #fff; /* White background */
+.contact-info {
+  background: #fff;
   padding: 20px;
   border: 1px solid #e0e0e0;
   border-radius: 5px;
   flex: 1;
 }
 
-.contact-info h3, .contact-form h3 {
+.contact-info h3 {
   margin-top: 0;
-  color: #001F3F; /* Navy Blue */
+  color: #001F3F;
 }
 
 .contact-info ul {
@@ -255,27 +250,53 @@ nav ul li a:hover {
 
 .contact-info ul li i {
   font-size: 1.2em;
-  margi  n-right: 10px;
-  color: #001F3F; /* Navy Blue */
+  margin-right: 10px;
+  color: #001F3F;
 }
 
 .contact-info ul li a {
-  color: #001F3F; /* Navy Blue */
+  color: #001F3F;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .contact-info ul li a:hover {
-  color: #D4AF37; /* Dark Gold hover */
+  color: #D4AF37;
 }
 
-.contact-form input, .contact-form textarea {
+/* Contact Form Box */
+.container-form {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.container-form h3 {
+  margin-top: 0;
+  color: #001F3F;
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
   width: 100%;
   padding: 10px;
-  margin: 10px 0;
   border: 1px solid #e0e0e0;
   border-radius: 5px;
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 
 .contact-form textarea {
@@ -283,23 +304,25 @@ nav ul li a:hover {
   height: 150px;
 }
 
-.contact-form button {
-  background: #001F3F; /* Navy Blue */
+.contact-form .btn {
+  background: #001F3F;
   color: #fff;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: bold;
   transition: background 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.contact-form button:hover {
-  background: #D4AF37; /* Dark Gold hover */
+.contact-form .btn:hover {
+  background: #D4AF37;
 }
 
-/* Map */
+/* Map — full width at the bottom of Contact */
 .map {
-  margin-top: 40px;
   border: 1px solid #e0e0e0;
   border-radius: 5px;
   overflow: hidden;
@@ -307,13 +330,14 @@ nav ul li a:hover {
 
 .map iframe {
   width: 100%;
-  height: 300px;
+  height: 350px;
   border: none;
+  display: block;
 }
 
 /* Footer */
 footer {
-  background: #001F3F; /* Navy Blue */
+  background: #001F3F;
   color: #fff;
   text-align: center;
   padding: 20px 0;
@@ -323,4 +347,19 @@ footer {
 footer p {
   margin: 0;
   font-size: 0.9em;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  #home h1 {
+    font-size: 2em;
+  }
+
+  #home p {
+    font-size: 1.1em;
+  }
 }
